@@ -6,6 +6,9 @@ import { checkSessionIdExists } from '../middlewares/check-session-id-exists';
 
 
 export async function transactionsRoutes(app:FastifyInstance){
+  app.addHook('preHandler', async (request, reply)=>{
+    console.log(`${request.method} ${request.url}`)
+  })
   app.get('/',
    { preHandler: [checkSessionIdExists] }, 
    async (request)=>{
@@ -49,7 +52,7 @@ export async function transactionsRoutes(app:FastifyInstance){
     let sessionId = request.cookies.sessionId;
     if(!sessionId){
       sessionId = randomUUID(); 
-      reply.cookie('sessionId', sessionId, {
+      reply.setCookie('sessionId', sessionId, {
         path: '/',
         maxAge: 60 * 60 * 24 * 7 // 7 days
       })
