@@ -1,18 +1,18 @@
-import fasfify from 'fastify'
-import { knex } from './database'
+import fasfify from 'fastify';
+import cookie from '@fastify/cookie';
+
+import { env } from './env';
+import { transactionsRoutes } from './routes/transactions';
 
 const app = fasfify()
-app.get('/hello', async () => {
-  const transactions = await knex('transactions')
-  .select('*')
-  .where('amount', 1000)
-  return transactions
-})
+
+app.register(cookie);
+app.register(transactionsRoutes, {prefix: '/transactions'});
 
 app
   .listen({
-    port: 3333,
+    port: env.PORT,
   })
   .then(() => {
-    console.log('Server runing')
-  })
+    console.log(`Server is running on port: ${env.PORT}`);
+  });
