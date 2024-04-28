@@ -1,0 +1,47 @@
+[33mcommit 480139b6426c5bdd0b5758c358cf5aa27d9472fa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Sun Apr 28 10:13:51 2024 -0300
+
+    feat: adding tsup library to build app and creating eslint exceptions
+
+[33mcommit 3eb505e189470c60518e76a9bc95d768063568e0[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Thu Apr 25 09:42:43 2024 -0300
+
+    applying test structure and adjust enviroment to test scenario.
+
+[33mcommit 9b95bb8a189d278d23bc0563c6e88175fa79d780[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Wed Apr 24 22:57:58 2024 -0300
+
+    installing vitest for backend tests
+
+[33mcommit 0964de9636c6cccbf16a1fb29ce02f6751941596[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Tue Apr 23 08:30:03 2024 -0300
+
+    fixing mistypping on post route
+
+[33mcommit 0a66169b9538e18b0e9404f7befceaf3beb525ce[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Tue Apr 23 07:46:20 2024 -0300
+
+    updating transactions route and implementing session-id middleware
+
+[33mcommit 2dae18362377ccccfe3d0d69cb68730d932c669f[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Mon Apr 22 21:54:07 2024 -0300
+
+    adding zod to validade enviroment variables
+
+[33mcommit b6908253f0611c621cb0bf26fb9729423b8471f2[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Mon Apr 22 10:42:29 2024 -0300
+
+    fixing values to work with tsx
+
+[33mcommit 0298325c13f27205a1ddb019bcea3132680a1d51[m
+Author: Wanderson Alves do Nascimento <wanderson.alves.n@outlook.com>
+Date:   Sun Apr 21 17:40:53 2024 -0300
+
+    updating knex config
